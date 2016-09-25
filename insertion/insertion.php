@@ -26,7 +26,7 @@ $req= " INSERT INTO `cheval` ( `nom`, `race`, `image`) VALUES ( '$nom_cheval','$
 $resultat = $bdd-> exec($req);
 //message en cas d'erreur
 if($resultat)   echo " le cheval à bien été ajouté" ;
-else echo " désolé, il y avait une erreur de soumission "; 
+else echo " désolé...erreur de soumission "; 
 
 
 ?>
