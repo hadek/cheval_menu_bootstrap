@@ -30,10 +30,10 @@ include('../connexion.php');
  $req ="SELECT * FROM cheval";
 //executer la requête à l'aide de la fonction exec et mettre le resultat dans $resultat
 
-$resultat = $bdd->query($req); 
+$armoire = $bdd->query($req); 
 //lecture des tiroirs de l'armoire $resultat à l'aide de la fonction foreach 
 
-foreach($resultat  as $tiroir ){
+foreach($armoire  as $tiroir ){
 // mettre ds une ligne
 echo '<tr><td>'.$tiroir['ID'].'</td><td>'.$tiroir['nom'].'</td><td>'.$tiroir['race'].'</td><td><img src ="../images/'.$tiroir['image'].'"></td></tr>';
 }
