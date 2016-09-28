@@ -36,7 +36,7 @@ $armoire = $bdd->query($req);
 
 foreach($armoire  as $tiroir ){
 // la colonne ID va contenir les identifiants de chaque cheval et en particulier celui à supprimer
-echo '<tr><td><input type="radio" name="ID" value="'.$tiroir['ID'].'" ></td><td>'.$tiroir['ID'].'</td><td>'.$tiroir['nom'].'</td><td>'.$tiroir['race'].'</td><td><img src ="../images/'.$tiroir['image'].'"></td></tr>';
+echo '<tr><td><input type="radio" name="ID" value="'.$tiroir['ID'].'" ></td><td>'.$tiroir['nom'].'</td><td>'.$tiroir['race'].'</td><td><img src ="../images/'.$tiroir['image'].'"></td></tr>';
 }
 ?>
 </table>
