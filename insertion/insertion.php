@@ -29,5 +29,14 @@ echo ' ohlala ...problème';
 
 
 
+<<<<<<< HEAD
+=======
+//la requête
+$req= " INSERT INTO `cheval` ( `nom`, `race`, `image`) VALUES ( '$nom_cheval','$race', '$nom_image')";
+$resultat = $bdd-> exec($req);
+//message en cas d'erreur
+if($resultat)   echo " le cheval à bien été ajouté" ;
+else echo " désolé...erreur de soumission "; 
+>>>>>>> e86659ed29b79371bb43bc97e038efa15df89300
 
 
