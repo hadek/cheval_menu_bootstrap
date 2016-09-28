@@ -7,9 +7,11 @@
  </head>
 <body>
 <form method="POST" action="insertion.php" enctype="multipart/form-data">
-<p>Nom <input type="text"  name="nom" ></p>
-<p>Race <input type="text"  name="race" ></p>
-<p> <input  type="FILE" name="image">
+<input type="text" name="nom" value="nom" />
+
+<input type="text" name="race" value="race" />
+<input type="file" name="image" />
+
 <input type="submit" name="Envoyer" value="Enregistrer" />
 
 

@@ -1,0 +1,19 @@
+<?php 
+//tester le bon fonctionnement de l'envoi de l'identifiant 
+
+print_r($_POST, $return = null);
+include('../connexion.php');
+// vider les données de l'armoire $_POST
+//Attention à la casse des variables dans le formulaire !!!
+$ID= (int)$_POST['ID'];
+
+$req= " DELETE FROM `cheval` WHERE ID = :ID";
+            $statement = $bdd -> prepare($req);
+            $statement -> BindParam('ID', $ID, PDO::PARAM_INT);
+            $result = $statement -> execute();
+//message en cas d'erreur
+if($result)   echo " le cheval à bien été supprimer" ;
+else echo " désolé, il y avait une erreur de soumission "; 
+
+
+?>
